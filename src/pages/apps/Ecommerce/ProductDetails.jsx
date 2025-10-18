@@ -126,7 +126,7 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL = "http://localhost:3000/api/products";
+  const API_BASE_URL = "https://ecomm.braventra.in/api/products";
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -232,7 +232,7 @@ const ProductDetails = () => {
                           // ✅ Remove "/public", Express already serves "public"
                           src={
                             product.image_url
-                              ? `http://localhost:3000${product.image_url.replace(
+                              ? `https://ecomm.braventra.in${product.image_url.replace(
                                   "/public",
                                   ""
                                 )}`

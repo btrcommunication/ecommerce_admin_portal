@@ -16,7 +16,7 @@ const Products = () => {
   const navigate = useNavigate();
 
   // The correct API endpoint for our backend
-  const API_BASE_URL = "http://localhost:3000/api/products";
+  const API_BASE_URL = "https://ecomm.braventra.in/api/products";
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -214,7 +214,7 @@ const Products = () => {
                     {/* Product image */}
                     <div className="bg-light flex-grow-0 text-center" style={{ height: '200px', overflow: 'hidden' }}>
                       <img
-                        src={`http://localhost:3000${product.image_url}`}
+                        src={`https://ecomm.braventra.in${product.image_url}`}
                         alt={product.name}
                         className="img-fluid h-100"
                         style={{ objectFit: 'contain', width: '100%' }} // This is the key change

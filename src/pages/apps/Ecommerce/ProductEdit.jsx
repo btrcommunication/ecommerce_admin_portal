@@ -11,7 +11,7 @@ const ProductAdd = () => {
     const [submitStatus, setSubmitStatus] = useState({ message: '', variant: '' });
     const [error, setError] = useState(null);
     
-    const API_BASE_URL = "http://localhost:3000/api";
+    const API_BASE_URL = "https://ecomm.braventra.in/api";
 
     // Fetch categories from the API dynamically
     useEffect(() => {
